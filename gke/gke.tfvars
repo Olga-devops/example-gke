@@ -1,0 +1,24 @@
+# #credentials        = "./fuchicorp-service-account.json"
+# project_id         = "plucky-sight-265618"
+# region             = "us-central1-a"
+# zones              = ["<region>-a", "<region>-b", "<region>-c"]
+# name               = "gke-cluster"
+# machine_type       = "<machine_type>"
+# min_count          = 1
+# max_count          = 3
+# disk_size_gb       = 10
+# service_account    = "<service_account_name>@<project_name>.iam.gserviceaccount.com"
+# initial_node_count = 3
+# deployment_environment = "tools"
+# google_bucket_name     = "olga-28-bucket"
+
+cluster_name = "fuchicorp-cluster"
+node_count = "3"
+google_project_id = "plucky-sight-265618" #change to fuchicorp project
+service_account_path = "./fuchicorp-service-account.json"
+region = "us-central1"
+google_bucket_name  = "olga-28-bucket" #change to fuchicorp bucket
+cluster_version = "1.13.11-gke.9"
+google_container_node_pool.name = "my-node-pool"
+google_container_node_pool.location = "us-central1"
+deployment_environment = "test"
